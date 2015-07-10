@@ -1,0 +1,83 @@
+#meimg.start{
+	left: 50%;
+	animation: translatePhoto 2s linear 0.5s;
+	-webkit-animation: translatePhoto 2s linear 0.5s;
+	-moz-animation: translatePhoto 2s linear 0.5s;
+}
+
+@keyframes translatePhoto {
+	from{
+		left: 50%;
+	}
+	to {
+		left: 78.7%;
+	}
+}
+
+.info.start {
+	opacity: 0;
+	left: 78.7%;
+	animation: translateInfo 2s linear 0.5s;
+	-webkit-animation: translateInfo 2s linear 0.5s;
+	-moz-animation: translateInfo 2s linear 0.5s;
+}
+
+
+@keyframes translateInfo {
+	from{
+		opacity: 0;
+		left: 78.7%;
+	}
+	to {
+		opacity: 1;
+		left: 50%;
+	}
+}
+
+
+#meimg{
+	position: absolute;
+	top: 50%;
+	left: 78.7%;
+	/*left: 50%;*/
+	bottom: auto;
+	right: auto;
+	max-width: 768px;
+	text-align: center;
+	border-radius: 30%;
+	height: 50%;
+	width: auto;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.info {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	bottom: auto;
+	right: auto;
+	/*width: 50%;*/
+	max-width: 768px;
+	text-align: center;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.info a, .info h2 {
+	color: white;
+	font-weight: 300;
+	text-transform: lowercase;
+	font-size: 20px;
+	font-size: 1.25rem;
+}
+
+.info h2 {
+	text-transform: uppercase;
+}

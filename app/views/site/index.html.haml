@@ -1,2 +1,58 @@
-%h1 Site#index
-%p Find me in app/views/site/index.html.haml
+%nav#cd-vertical-nav
+	%ul
+		%li
+			%a{"data-number" => "1", :href => "#section1"}
+				%span.cd-dot
+				%span.cd-label Intro
+		%li
+			%a{"data-number" => "2", :href => "#section2"}
+				%span.cd-dot
+				%span.cd-label About
+		%li
+			%a{"data-number" => "3", :href => "#section3"}
+				%span.cd-dot
+				%span.cd-label Features
+		%li
+			%a{"data-number" => "4", :href => "#section4"}
+				%span.cd-dot
+				%span.cd-label Portfolio
+		%li
+			%a{"data-number" => "5", :href => "#section5"}
+				%span.cd-dot
+				%span.cd-label Pricing
+		%li
+			%a{"data-number" => "6", :href => "#section6"}
+				%span.cd-dot
+				%span.cd-label Contact
+%section#section1.cd-section
+	.info.start
+		%h2 Mussab ElDash
+		%br
+			%a{:href => "mailto:mussab14@gmail.com"} mussab14@gmail.com
+	%img#meimg.start{:src => "/assets/me.jpg"}
+	%a.cd-scroll-down.cd-img-replace{:href => "#section2"} scroll down
+/ cd-section
+%section#section2.cd-section
+	%a.cd-scroll-up.cd-img-replace{:href => "#section1"} scroll up
+	%p &ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;
+	%a.cd-scroll-down.cd-img-replace{:href => "#section3"} scroll down
+/ cd-section
+%section#section3.cd-section
+	%a.cd-scroll-up.cd-img-replace{:href => "#section2"} scroll up
+	%p &ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;
+	%a.cd-scroll-down.cd-img-replace{:href => "#section4"} scroll down
+/ cd-section
+%section#section4.cd-section
+	%a.cd-scroll-up.cd-img-replace{:href => "#section3"} scroll up
+	%p &ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;
+	%a.cd-scroll-down.cd-img-replace{:href => "#section5"} scroll down
+/ cd-section
+%section#section5.cd-section
+	%a.cd-scroll-up.cd-img-replace{:href => "#section4"} scroll up
+	%p &ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;
+	%a.cd-scroll-down.cd-img-replace{:href => "#section6"} scroll down
+/ cd-section
+%section#section6.cd-section
+	%a.cd-scroll-up.cd-img-replace{:href => "#section5"} scroll up
+	%p &ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;
+/ cd-section
