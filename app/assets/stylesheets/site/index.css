@@ -14,6 +14,15 @@
 	}
 }
 
+@-webkit-keyframes translatePhoto {
+	from{
+		left: 50%;
+	}
+	to {
+		left: 78.7%;
+	}
+}
+
 .info.start {
 	opacity: 0;
 	left: 78.7%;
@@ -24,6 +33,17 @@
 
 
 @keyframes translateInfo {
+	from{
+		opacity: 0;
+		left: 78.7%;
+	}
+	to {
+		opacity: 1;
+		left: 50%;
+	}
+}
+
+@-webkit-keyframes translateInfo {
 	from{
 		opacity: 0;
 		left: 78.7%;
