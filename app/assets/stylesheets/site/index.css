@@ -10,7 +10,7 @@
 		left: 50%;
 	}
 	to {
-		left: 78.7%;
+		left: 75%;
 	}
 }
 
@@ -19,7 +19,7 @@
 		left: 50%;
 	}
 	to {
-		left: 78.7%;
+		left: 75%;
 	}
 }
 
@@ -58,7 +58,7 @@
 #meimg{
 	position: absolute;
 	top: 50%;
-	left: 78.7%;
+	left: 75%;
 	/*left: 50%;*/
 	bottom: auto;
 	right: auto;
