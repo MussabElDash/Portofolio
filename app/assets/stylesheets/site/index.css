@@ -1,71 +1,24 @@
 #meimg.start{
-	left: 50%;
 	animation: translatePhoto 2s linear 0.5s;
 	-webkit-animation: translatePhoto 2s linear 0.5s;
 	-moz-animation: translatePhoto 2s linear 0.5s;
 }
 
-@keyframes translatePhoto {
-	from{
-		left: 50%;
-	}
-	to {
-		left: 75%;
-	}
-}
-
-@-webkit-keyframes translatePhoto {
-	from{
-		left: 50%;
-	}
-	to {
-		left: 75%;
-	}
-}
-
 .info.start {
 	opacity: 0;
-	left: 78.7%;
 	animation: translateInfo 2s linear 0.5s;
 	-webkit-animation: translateInfo 2s linear 0.5s;
 	-moz-animation: translateInfo 2s linear 0.5s;
 }
 
-
-@keyframes translateInfo {
-	from{
-		opacity: 0;
-		left: 78.7%;
-	}
-	to {
-		opacity: 1;
-		left: 50%;
-	}
-}
-
-@-webkit-keyframes translateInfo {
-	from{
-		opacity: 0;
-		left: 78.7%;
-	}
-	to {
-		opacity: 1;
-		left: 50%;
-	}
-}
-
-
 #meimg{
 	position: absolute;
-	top: 50%;
-	left: 75%;
 	/*left: 50%;*/
 	bottom: auto;
 	right: auto;
 	max-width: 768px;
 	text-align: center;
 	border-radius: 30%;
-	height: 50%;
 	width: auto;
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	-moz-transform: translateX(-50%) translateY(-50%);
@@ -76,11 +29,8 @@
 
 .info {
 	position: absolute;
-	left: 50%;
-	top: 50%;
 	bottom: auto;
 	right: auto;
-	/*width: 50%;*/
 	max-width: 768px;
 	text-align: center;
 	-webkit-transform: translateX(-50%) translateY(-50%);
@@ -100,4 +50,92 @@
 
 .info h2 {
 	text-transform: uppercase;
+}
+
+@media screen and (orientation: landscape) {
+	.info {
+		top: 50%;
+		left: 22.5%;
+	}
+	.info.start {
+		left: 78.7%;
+	}
+	@keyframes translateInfo {
+		to {
+			opacity: 1;
+			left: 22.5%;
+		}
+	}
+	@-webkit-keyframes translateInfo {
+		to {
+			opacity: 1;
+			left: 22.5%;
+		}
+	}
+
+	#meimg {
+		height: 50%;
+		top: 50%;
+		left: 70%;
+	}
+	#meimg.start{
+		left: 50%;
+	}
+	@keyframes translatePhoto {
+		to {
+			left: 70%;
+		}
+	}
+	@-webkit-keyframes translatePhoto {
+		to {
+			left: 70%;
+		}
+	}
+}
+
+@media screen and (orientation: portrait) {
+	#meimg {
+		width: 50%;
+		top: 30%;
+		left: 50%;
+	}
+	#meimg.start{
+		top: 50%;
+		left: 30%;
+	}
+	@keyframes translatePhoto {
+		to {
+			top: 30%;
+			left: 50%;
+		}
+	}
+	@-webkit-keyframes translatePhoto {
+		to {
+			top: 30%;
+			left: 50%;
+		}
+	}
+
+	.info {
+		top: 70%;
+		left: 50%;
+	}
+	.info.start {
+		top: 50%;
+		left: 78.7%;
+	}
+	@keyframes translateInfo {
+		to {
+			opacity: 1;
+			top: 70%;
+			left: 50%;
+		}
+	}
+	@-webkit-keyframes translateInfo {
+		to {
+			opacity: 1;
+			top: 70%;
+			left: 50%;
+		}
+	}
 }
